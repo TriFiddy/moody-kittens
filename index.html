@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Moody Kittens | CodeWorks</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/3c51ce0295.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
   <link rel="shortcut icon" href="moody-logo.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -14,36 +24,53 @@
 <body>
   <header class="bg-dark d-flex align-items-center p-1 space-between">
     <img src="moody-logo.png" height="60" alt="Moody Kittens">
-    <form class="" onsubmit="addKitten(event)">
+    <form class ="" onsubmit="addKitten(event)">
+    <!-- <form class="" onsubmit="addKitten(event)">
       <div class="d-flex">
         <input placeholder="Name" type="text" name="name" />
         <button class="btn-special" type="submit">
           /ᐠ｡ꞈ｡ᐟ\
         </button>
       </div>
-    </form>
+    </form> -->
+    <div class="m-2 d-flex  hidden" id="nameInput">
+      <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+      <input type="text" name="name" class="form-control "  placeholder="Kitty Name" required>
+      <button class="btn-special" type="submit">
+        <i class="fa-solid fa-cat fa-2xl"></i>
+      </button>
+    </div>
+  </form>
   </header>
-  <main class="container">
-    <div id="welcome" class="d-flex justify-content-center">
-      <div class="card p-2 text-center w-50">
-        <img src="moody-logo.png" height="250" alt="Moody Kittens">
+  <main class="container  mt-3 p3 align-items-center">
+    <!-- NOTE added hidden to div class under -->
+    <div id="welcome" class="d-flex justify-content-center ">
+      <div class="card p-2 text-center align-items-center ">
+        <img src="/MrKitty.webp" height="250" alt="Moody Kittens">
         <div class="mt-2">
-          <b class="text-center">Hello Student</b>
-          <p>This is your starter template only feel free to modify the look as you tackle the challenges that we have laid out.</p>
-          <small>Good Luck and Have Fun!</small>
+          <b class="text-center">Hail and well met future kitty owner</b>
+          <p> What's it like to try and make a beautiful kitten love you?</p>
+          <small>well... lets find out</small>
           <br>
-          <button onclick="getStarted()">Get Started</button>
+
+          
+          <button onclick="getStarted()">Kitty Time</button>
         </div>
       </div>
     </div>
     <div class="p-2">
-      <div id="kittens" class="d-flex align-items-center flex-wrap">
+      <!-- NOTE new kitten adding -->
+      <div id="kittens"  class="d-flex  bg-transparent text-center w-35 hidden">
       </div>
+      <audio src="cat-meow5.wav" id="cat-meow"></audio>
+      <audio src="angry6.wav" id="cat-gone"></audio>
+      <audio src="purr1.wav" id="cat-happy"></audio>
   </main>
-  <footer class="card bg-dark text-light p-2 d-flex align-items-center justify-content-center">
+  <footer class=" text-light p-2 d-flex align-items-center justify-content-center">
     <small>Created with <span style="color: var(--primary)">&hearts;</span> by CodeWorks</small>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="app.js"></script>
 </body>
 

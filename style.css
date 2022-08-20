@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  font-family: 'Silkscreen', cursive;
 }
 :root{
   --primary: #abce5c;
@@ -16,7 +17,7 @@
 }
 
 body{
-  background-color: var(--bg);
+  background-image: url(/wallpaperuse.com-nyan-cat-wallpaper-66021.jpg);
   font-size: 16pt;
   color: var(--text-color);
   margin: 0;
@@ -36,6 +37,7 @@ main{
 }
 footer{
   height: 120px;
+  
 }
 
 p{
@@ -101,7 +103,7 @@ button.btn-special{
   justify-content: center;
 }
 button.btn-special:after{
-  content: "ADD";
+  /* content: "ADD"; */
   margin-top: 5px;
   font-size: 8pt;
   color: var(--primary);
@@ -113,14 +115,26 @@ button.btn-special:hover{
   color: var(--primary);
 }
 .container{
-  margin: 0 .5em;
-}
-
-.card{
-  background-color: var(--light);
+  /* margin: 0 .5em; */
+  
   padding: 1em;
   box-shadow: var(--shadow);
-  border-radius: var(--corners);
+  border-radius: 4px;
+}
+ .cardKitty{
+  background: rgb(255,0,0);
+background: linear-gradient(144deg, rgba(255,0,0,1) 8%, rgba(255,149,0,1) 18%, rgba(241,255,0,1) 36%, rgba(5,255,0,1) 54%, rgba(49,56,253,1) 79%, rgba(218,0,255,1) 96%);
+border: black solid 5px;
+ }
+
+
+.card{
+  background-color: var(--light) ;
+  
+  padding: 1em;
+  box-shadow: var(--shadow);
+  border-radius: 4px;
+  
 }
 
 .shadow{
@@ -129,24 +143,24 @@ button.btn-special:hover{
 
 
 .kitten img{
-  filter: drop-shadow(2px 4px 6px #1b1b1b);
+  filter: drop-shadow(4px 8px 16px #1b1b1b);
   transition: all .35s ease;
 }
 .kitten.happy img{
-  filter: drop-shadow(2px 4px 6px #00ffb3);
+  filter: drop-shadow(4px 8px 16px #00ffb3);
 }
 .kitten.tolerant img{
-  filter: drop-shadow(2px 4px 6px #646464);
+  filter: drop-shadow(4px 8px 16px #646464);
 }
 .kitten.angry img{
-  filter: drop-shadow(2px 4px 6px #ff0000) contrast(1);
+  filter: drop-shadow(4px 8px 16px #ff0000) contrast(1);
 }
 .kitten.gone img{
-  filter: drop-shadow(2px 4px 6px #ff0000) contrast(0);
+  filter: drop-shadow(4px 8px 16px #ff0000) contrast(0);
 }
 .kitten.gone{
   color: var(--danger);
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .bg-dark{
@@ -166,12 +180,14 @@ button.btn-special:hover{
 }
 
 .btn-cancel{
-  background-color: red;
+  background-color: transparent;
   border-color: lightcoral;
+  box-shadow: none;
+  color: aquamarine;
 }
 .btn-cancel:hover{
-  background-color: #fa4141;
-  border-color: #ff3737;
+  background-color: transparent;
+  color: rgb(203, 18, 18);
 }
 
 .text-danger{
