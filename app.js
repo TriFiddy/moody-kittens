@@ -87,7 +87,7 @@ function drawKittens() {
   kittens.forEach((kitten) => {
     kittensTemplate += `
   <div id="catImage" class = "cardKitty  bg-dark  m-2  text-dark p-2 align-items-center text-center kitten ${kitten.mood}">
-  <img src="/MrKitty.webp" alt="" class="w-50 m-3">
+  <img src="MrKitty.webp" alt="" class="w-50 m-3">
   <div class="d-grid gap-2 d-md-block">
   <button class="btn btn-info" type="button" onclick ="pet('${kitten.id}')">Pet</button>
   <button class="btn btn-warning " type="button" onclick = "catnip('${kitten.id}')">Catnip</button>
