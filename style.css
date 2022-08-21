@@ -11,9 +11,10 @@
   --corners: 0;
   --text-color: #3a3838;
   --dark: #3a3838;
+  --black: black;
   --dark-lighten: #504c4c;
   --light: #fdfdfd;
-  --danger: #ff0000;
+  --danger: #ff3737;
 }
 
 body{
@@ -36,7 +37,7 @@ main{
   min-height: calc(95vh - (120px + 80px));
 }
 footer{
-  height: 120px;
+  height: 40px;
   
 }
 
@@ -70,6 +71,10 @@ input{
 }
 input:focus{
   outline: none;
+}
+
+.cancel{
+  
 }
 
 button{
@@ -117,20 +122,67 @@ button.btn-special:hover{
 .container{
   /* margin: 0 .5em; */
   
+ 
   padding: 1em;
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
   border-radius: 4px;
+
+}
+
+.openCard{
+  border: black solid 5px;
 }
  .cardKitty{
-  background: rgb(255,0,0);
+  
+  
+  /* background: rgb(255,0,0);
 background: linear-gradient(144deg, rgba(255,0,0,1) 8%, rgba(255,149,0,1) 18%, rgba(241,255,0,1) 36%, rgba(5,255,0,1) 54%, rgba(49,56,253,1) 79%, rgba(218,0,255,1) 96%);
-border: black solid 5px;
+border: black solid 5px; */
+background-image: url(./667542719d4f778.png) ;
+background-repeat: no-repeat;
+background-size: fill;
+height: 640px;
+background-position: center;
  }
+
+ .gradient-border {
+  --borderWidth: 3px;
+  margin: 10px;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 
 .card{
   background-color: var(--light) ;
-  
+  text:black;
   padding: 1em;
   box-shadow: var(--shadow);
   border-radius: 4px;
@@ -140,6 +192,21 @@ border: black solid 5px;
 .shadow{
   filter: drop-shadow(var(--shadow));
 }
+ /* .mrKitty{
+  border:  black solid 5px;
+ } */
+
+ @keyframes floatingCard {
+  0%,100%{
+    transform: translateY(-10px);
+  }
+  50%{
+    transform: translateY(10px) ;
+  }
+ }
+.poptart{
+  animation: floatingCard 8s infinite
+}
 
 
 .kitten img{
@@ -147,10 +214,10 @@ border: black solid 5px;
   transition: all .35s ease;
 }
 .kitten.happy img{
-  filter: drop-shadow(4px 8px 16px #00ffb3);
+  filter: drop-shadow(4px 8px 16px #00ff40);
 }
 .kitten.tolerant img{
-  filter: drop-shadow(4px 8px 16px #646464);
+  filter: drop-shadow(4px 8px 16px #343333);
 }
 .kitten.angry img{
   filter: drop-shadow(4px 8px 16px #ff0000) contrast(1);
@@ -279,6 +346,9 @@ border: black solid 5px;
   text-align: center;
 }
 
+.text-black{
+  color: --black;
+}
 .action{
   cursor: pointer;
   transition: all .3s linear;

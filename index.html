@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <header class="bg-dark d-flex align-items-center p-1 space-between">
+  <header class="bg-transparent d-flex align-items-center p-1 space-between">
     <img src="./moody-logo.png" height="60" alt="Moody Kittens">
     <form class ="" onsubmit="addKitten(event)">
     <!-- <form class="" onsubmit="addKitten(event)">
@@ -42,15 +42,15 @@
     </div>
   </form>
   </header>
-  <main class="container  mt-3 p3 align-items-center">
+  <main class="   mt-3 p3 align-items-center">
     <!-- NOTE added hidden to div class under -->
     <div id="welcome" class="d-flex justify-content-center ">
-      <div class="card p-2 text-center align-items-center ">
-        <img src="./MrKitty.webp" height="250" alt="Moody Kittens">
-        <div class="mt-2">
+      <div class="openCard gradient-border p-2 text-center align-items-center ">
+        <img src="./MrKitty.webp" height="250" alt="Moody Kittens" class="mrKitty">
+        <div class="mt-2 text-black">
           <b class="text-center">Hail and well met future kitty owner</b>
           <p> What's it like to try and make a beautiful kitten love you?</p>
-          <small>well... lets find out</small>
+          <small>well... let's find out</small>
           <br>
 
           
@@ -60,13 +60,13 @@
     </div>
     <div class="p-2">
       <!-- NOTE new kitten adding -->
-      <div id="kittens"  class="d-flex  bg-transparent text-center w-35 hidden">
+      <div id="kittens"  class="container  d-flex   text-center w-35 hidden">
       </div>
       <audio src="cat-meow5.wav" id="cat-meow"></audio>
       <audio src="angry6.wav" id="cat-gone"></audio>
       <audio src="purr1.wav" id="cat-happy"></audio>
   </main>
-  <footer class=" text-light p-2 d-flex align-items-center justify-content-center">
+  <footer class=" text-light  d-flex align-items-center justify-content-center">
     <small>Created with <span style="color: var(--primary)">&hearts;</span> by CodeWorks</small>
   </footer>
 
