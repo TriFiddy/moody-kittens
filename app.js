@@ -83,7 +83,7 @@ function drawKittens() {
   kittensTemplate = " "
   kittens.forEach((kitten) => {
     kittensTemplate += `
-    <div class="poptart gradient-border text-center">
+    <div>
   <div id="catImage" class = "  cardKitty   m-2  text-dark p-2  kitten ${kitten.mood}">
   <img src="./MrKitty.webp" alt="kitty" class="w-50 m-3">
   <div class="d-grid gap-2 d-md-block">
