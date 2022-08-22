@@ -25,14 +25,7 @@
   <header class="bg-transparent d-flex align-items-center p-1 space-between">
     <img src="./moody-logo.png" height="60" alt="Moody Kittens">
     <form class ="" onsubmit="addKitten(event)">
-    <!-- <form class="" onsubmit="addKitten(event)">
-      <div class="d-flex">
-        <input placeholder="Name" type="text" name="name" />
-        <button class="btn-special" type="submit">
-          /ᐠ｡ꞈ｡ᐟ\
-        </button>
-      </div>
-    </form> -->
+
     <div class="m-2 d-flex  hidden" id="nameInput">
       <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
       <input type="text" name="name" class="form-control "  placeholder="Kitty Name" required>
@@ -59,7 +52,6 @@
       </div>
     </div>
     <div class="p-2">
-      <!-- NOTE new kitten adding -->
       <div id="kittens"  class="container d-flex   text-center w-35 hidden">
       </div>
       <audio src="cat-meow5.wav" id="cat-meow"></audio>
